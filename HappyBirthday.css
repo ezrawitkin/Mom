@@ -1,0 +1,63 @@
+body {
+    background: linear-gradient(rgb(130, 85, 228),rgb(17, 230, 245));
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100vh; 
+}
+
+header{
+    justify-content: center;
+    font-size: 30px;
+}
+
+#balloons{
+    width: 40px;
+    float: left;
+    margin: 10px;
+    margin-left: 33vw;
+    animation: slide 3s ease 1.5s 4;
+
+}
+
+@keyframes slide {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-10px, -20px) scale(1.25);
+    }
+    50% {
+        transform: translate(-20px, 0px) scale(1);
+    }
+    75% {
+        transform: translate(-10px, 20px) scale(1.25);
+        
+    }
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+  }
+
+main{
+    justify-content: center;
+}
+
+#MomAtWaterfall{
+    width: 250px;
+    float:left;
+    margin-left: 20vw;
+    margin-right: 10px;
+    border-radius: 10%;
+
+}
+
+p{
+    font-size: 20px;
+    margin-right: 20vw;
+
+}
+
+::selection{
+    color: #222;
+    background: #cb24da;
+}
