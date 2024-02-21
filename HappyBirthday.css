@@ -57,29 +57,34 @@ p{
 
 }
 
+
 div > p{
+    position:relative;
+    left:80px;
+    top: -30px;
     font-size: 50px;
-    text-align: center;
     color: rgb(110, 4, 110);
     animation: grow 3s ease 1.5s infinite;
 }
 
 @keyframes grow {
     0% {
-        transform: translate(0, 0);
+        transform: scale(1);
     }
     35% {
         transform: scale(1.5);
     }
-    40% {
-        transform: rotate(5deg);
+    45% {
+        transform: scale(1.5) rotate(5deg);
     }
-    75% {
-        transform: rotate(-5deg);
-        
+    55% {
+        transform: scale(1.5) rotate(-5deg);
+    }
+    60% {
+        transform: scale(1.5);
     }
     100% {
-        transform: translate(0, 0) scale(1);
+        transform: scale(1);
     }
   }
 
